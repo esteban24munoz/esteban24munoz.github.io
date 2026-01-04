@@ -361,7 +361,7 @@ const handleSubmit = async (event: Event) => {
 
   .section-title {
     font-size: 36px;
-    text-align: left;
+    text-align: center;
   }
 
   .contact-container {
@@ -405,7 +405,7 @@ const handleSubmit = async (event: Event) => {
 
   .section-title {
     font-size: 28px;
-    text-align: left;
+    text-align: center;
   }
 
   .contact-container {

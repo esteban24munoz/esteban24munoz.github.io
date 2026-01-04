@@ -921,7 +921,7 @@ watch(gridKey, async () => {
 
   .section-title {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
   }
 
   .filter-tabs {
@@ -1022,7 +1022,7 @@ watch(gridKey, async () => {
 
   .section-title {
     font-size: 1.65rem;
-    text-align: left;
+    text-align: center;
   }
 
   .filter-tabs {

@@ -258,7 +258,7 @@ useScrollAnimation(showMoreBtnRef, { threshold: 0.3 })
 
   .section-title {
     font-size: 36px;
-    text-align: left;
+    text-align: center;
   }
 
   .recommendation-card {
@@ -304,7 +304,7 @@ useScrollAnimation(showMoreBtnRef, { threshold: 0.3 })
 
   .section-title {
     font-size: 28px;
-    text-align: left;
+    text-align: center;
   }
 
   .recommendation-card {

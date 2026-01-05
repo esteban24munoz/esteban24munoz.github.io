@@ -153,12 +153,8 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
         <!-- Project Images -->
         <div class="project-images">
           <div class="image-wrapper">
-            <img
-              :src="OliveCover"
-              alt="Viewbook Cover"
-              class="project-image lightbox-trigger"
-              @click="openProjectLightbox(0)"
-            />
+            <img :src="OliveCover" alt="Viewbook Cover" class="project-image lightbox-trigger"
+              @click="openProjectLightbox(0)" />
           </div>
         </div>
       </section>
@@ -169,7 +165,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
           <h2 class="section-label">02. ROLE</h2>
           <h3 class="role-title">Graphic Designer</h3>
           <p class="role-description">
-            I worked as a graphic designer, creating the menu design and six
+            I worked as a graphic designer, creating the menu design, website design, and six
             social media advertisements for the brand. I also collaborated with
             the team on the food truck design and final presentation. As a team,
             we developed the logo and established the brand guidelines to ensure
@@ -177,20 +173,13 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
           </p>
         </div>
         <div class="mockup-wrapper">
-          <img
-            :src="MenuFront"
-            alt="Menu Front Mockup"
-            class="laptop-mockup lightbox-trigger"
-            @click="openProjectLightbox(1)"
-          />
+          <img :src="MenuFront" alt="Menu Front Mockup" class="laptop-mockup lightbox-trigger"
+            @click="openProjectLightbox(1)" />
         </div>
       </section>
 
       <!-- Key Challenges Section -->
-      <section
-        ref="challengesSectionRef"
-        class="challenges-section fade-in-element"
-      >
+      <section ref="challengesSectionRef" class="challenges-section fade-in-element">
         <div class="challenges-header">
           <div class="divider-line"></div>
           <div class="challenges-title-wrapper">
@@ -240,21 +229,12 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
           <div class="wireframes-content">
             <h4 class="block-title">Brand Identity</h4>
             <p class="block-description">
-              Create a unified brand identity for a new Italian–Mediterranean
-              fusion food truck in Baltimore. The project required researching
-              fusion cuisine, understanding the local food-truck market,
-              analyzing competitors, and developing a strong visual
-              identity—logo, typography, color system, and branded materials—to
-              launch the concept.
+              My team and I brainstormed the brand identity and created a cohesive visual identity system.
+              We designed the logo, brand guidelines, research boards, concept statements, and a printed branding book. 
             </p>
           </div>
           <div class="wireframes-images">
-            <img
-              :src="BrandIdentity"
-              alt="Brand Identity"
-              class="wireframe-image"
-              @click="openProjectLightbox(2)"
-            />
+            <img :src="BrandIdentity" alt="Brand Identity" class="wireframe-image" @click="openProjectLightbox(2)" />
           </div>
         </div>
 
@@ -263,26 +243,17 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
         <!-- 1st Roughs Section -->
         <div class="roughs-section">
           <div class="roughs-header">
-            <h4 class="roughs-title">1st Roughs</h4>
+            <h4 class="roughs-title">1st Menu Design Roughs</h4>
             <p class="roughs-description">
-              After creating basic layout drafts, I created rough drafts of the
-              viewbook. These rough drafts were used to get feedback from the
-              client and to refine the design. Some concepts explored more
-              ambitious ideas and were refined to thoughtfully align with the
-              organization's brand guidelines
+              I created some roughs for the menu design and get some feedback from my team to make use of more ilustration and more detailed design.
             </p>
           </div>
 
           <div class="gallery-container">
             <div class="wireframe-gallery">
-              <img
-                v-for="(image, index) in wireframeImages"
-                :key="index"
-                :src="image"
-                :alt="`Viewbook rough ${index + 1}`"
-                class="wireframe-thumbnail"
-                @click="openWireframeLightbox(index)"
-              />
+              <img v-for="(image, index) in wireframeImages" :key="index" :src="image"
+                :alt="`Viewbook rough ${index + 1}`" class="wireframe-thumbnail"
+                @click="openWireframeLightbox(index)" />
             </div>
           </div>
 
@@ -299,7 +270,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
 
         <!-- MOCKUP SHOWCASE  -->
         <div class="roughs-section">
-          <div class="roughs-header">
+          <!-- <div class="roughs-header">
             <h4 class="roughs-title">1st Design Iterations</h4>
             <p class="roughs-description">
               After receiving feedback from the client, I refined the design to
@@ -307,18 +278,13 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
               the decision of removing the Masters, Degrees and Programs pages
               to keep the viewbook lightweight and focused on the main message.
             </p>
-          </div>
+          </div> -->
 
           <div class="gallery-container">
             <div class="wireframe-gallery">
-              <img
-                v-for="(image, index) in roughImages"
-                :key="index"
-                :src="image"
-                :alt="`Viewbook iteration ${index + 1}`"
-                class="wireframe-thumbnail"
-                @click="openRoughLightbox(index)"
-              />
+              <img v-for="(image, index) in roughImages" :key="index" :src="image"
+                :alt="`Viewbook iteration ${index + 1}`" class="wireframe-thumbnail"
+                @click="openRoughLightbox(index)" />
             </div>
           </div>
 
@@ -330,27 +296,14 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
     <CustomCursor />
 
     <!-- Lightbox for wireframe images -->
-    <vue-easy-lightbox
-      :visible="wireframeVisibleRef"
-      :imgs="wireframeImages"
-      :index="wireframeIndexRef"
-      @hide="onHideWireframe"
-    />
+    <vue-easy-lightbox :visible="wireframeVisibleRef" :imgs="wireframeImages" :index="wireframeIndexRef"
+      @hide="onHideWireframe" />
     <!-- Lightbox for rough images -->
-    <vue-easy-lightbox
-      :visible="roughVisibleRef"
-      :imgs="roughImages"
-      :index="roughIndexRef"
-      @hide="onHideRough"
-    />
+    <vue-easy-lightbox :visible="roughVisibleRef" :imgs="roughImages" :index="roughIndexRef" @hide="onHideRough" />
 
     <!-- Lightbox for project images -->
-    <vue-easy-lightbox
-      :visible="ProjectVisibleRef"
-      :imgs="projectImages"
-      :index="ProjectIndexRef"
-      @hide="onProjectHide"
-    />
+    <vue-easy-lightbox :visible="ProjectVisibleRef" :imgs="projectImages" :index="ProjectIndexRef"
+      @hide="onProjectHide" />
   </div>
 </template>
 
@@ -1253,8 +1206,8 @@ img-comparison-slider img {
     grid-template-columns: repeat(5, 1fr);
   }
 
- 
-  
+
+
   .roughs-section .wireframe-thumbnail:nth-child(6n + 2),
   .roughs-section .wireframe-thumbnail:nth-child(6n + 3),
   .roughs-section .wireframe-thumbnail:nth-child(6n + 4),

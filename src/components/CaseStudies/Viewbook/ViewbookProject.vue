@@ -427,7 +427,7 @@ useScrollAnimation(nextProjectSectionRef, { threshold: 0.2 });
           </article>
         </div>
       </section>
-    </div>
+    </div>                 
 
     <!-- Custom Cursor Component -->
     <CustomCursor />

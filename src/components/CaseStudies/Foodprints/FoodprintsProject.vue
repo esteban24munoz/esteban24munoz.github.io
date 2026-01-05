@@ -21,7 +21,7 @@ import HighWireframe3 from "./assets/high_wireframe_3.png";
 //Project Cover
 import CarmenCover from "./assets/carmen_cover.png";
 import AmazoniaCover from "./assets/amazonia_cover.png";
-import ChefCover from "./assets/chef_cover.jpg";
+import ChefCover from "./assets/chef_cover.png";
 import CarmenInsight from "./assets/carmen_insight.png";
 
 

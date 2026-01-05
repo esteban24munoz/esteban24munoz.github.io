@@ -115,7 +115,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
           <div class="overview-section">
             <h2 class="section-label">01. OVERVIEW</h2>
             <p class="overview-description">
-              TheTable’s website was designed to provide real-time inventory
+              The Table’s website was designed to provide real-time inventory
               updates, giving students instant visibility into the availability
               of items at the food pantry. The platform has significantly
               improved both operational efficiency and user experience when
@@ -171,7 +171,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
             Lead Web Developer
           </h3>
           <p class="role-description">
-            I designed and implemented TheTable’s website in React, focusing on
+            I designed and implemented The Table’s website in React, focusing on
             a clean, intuitive interface that allows students to see real-time
             pantry inventory and volunteers/board members to access management
             tools easily.
@@ -179,7 +179,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
             As the lead developer,
             <span class="text-accent"
               >I managed a team of three web developers</span
-            >, through which we further enhanced the system by creating a
+            >. We further enhanced the system by creating a
             barcode scanning feature that integrates product images via an API
             and automates checkout by updating the MySQL database in real time.
             This solution improved operational efficiency and reduced manual
@@ -257,7 +257,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
               I started the design of the public homepage website with a
               human-centered approach. The pantry inventory should clearly
               indicate which items are in or out of stock. The design should
-              also highlight the Table’s mission, hours, and donation options,
+              also highlight The Table’s mission, hours, and donation options,
               making it easy for students to access essential information at a
               glance.
             </p>
@@ -293,7 +293,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
               Login and Dashboard <br />Low-Fidelity Wireframes
             </h4>
             <p class="wireframe-description">
-              These were designed with security as a priority. My team and I decided to authenticate users using a University ID combined with a 4-digit PIN, ensuring controlled access for volunteers and board members.
+              These were designed with security as a priority. My team and I decided to authenticate users using their University ID combined with a 4-digit PIN, ensuring controlled access for volunteers and board members.
 <br /><br />
 Once logged in, the dashboard allows volunteers to check out shoppers, register pantry items, and add new shoppers, streamlining daily operations through a clear, task-focused interface.
             </p>
@@ -351,7 +351,7 @@ Once logged in, the dashboard allows volunteers to check out shoppers, register 
 
           <h4 class="block-title">
             The Table <br /><span style="opacity: 0.7; font-size: smaller">
-              Only Accessable on Campus
+              Only Accessible on Campus
             </span>
           </h4>
         </div>

@@ -354,7 +354,7 @@ useScrollAnimation(nextProjectSectionRef, { threshold: 0.2 });
             <h4 class="roughs-title">1st Design Iterations</h4>
             <p class="roughs-description">
               After receiving feedback from the client, I refined the design to create a more cohesive and visually appealing viewbook.
-              We made the decision of removing the Masters, Degrees and Programs pages to keep the viewbook lightweight and focused on the main message.
+              We made the decision to remove the Majors, Degrees and Programs page to keep the viewbook lightweight and focus on the main message.
             </p>
           </div>
 

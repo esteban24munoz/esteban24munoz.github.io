@@ -131,7 +131,7 @@ useScrollAnimation(nextProjectSectionRef, { threshold: 0.2 });
               across the region, diving deeper into the human narratives hidden
               within.
               <br /><br />
-              Through visually compelling products—interactive displays,
+              Through visually compelling designs—interactive displays,
               infographics, case studies, and immersive audio-visual pieces—we
               aimed to create an analytical and emotional experience centered on
               food security and nutrition.
@@ -181,7 +181,7 @@ useScrollAnimation(nextProjectSectionRef, { threshold: 0.2 });
 I designed both low-fidelity and high-fidelity wireframes and presented interactive demos using Figma and Dora.ai, demonstrating the storytelling approach to stakeholders and during internal staff meetings. I also conducted usability testing throughout the design iterations, continuously improving the user experience.
 
             <br /><br />
-        As the project evolved, my primary focus shifted to development. I built the website using React.js and GSAP, ensuring rich interactivity and full responsiveness across all screen sizes.
+        As the project evolved, my primary focus shifted to development. I built the websites using React.js and GSAP, ensuring rich interactivity and full responsiveness across all screen sizes.
 
           </p>
         </div>
@@ -210,7 +210,7 @@ I designed both low-fidelity and high-fidelity wireframes and presented interact
             <h4 class="block-title">Challenge</h4>
             <p class="block-description">
               In my role as a developer, one of the biggest challenges was time.
-              The deadlines were tight, as we planned to launch these three
+              The deadlines were tight, as we planned to launch these four
               websites by the end of 2025. Responsiveness was also difficult to
               achieve because we had designed parallax and scrolling animations
               for several sections in all of the websites.
@@ -286,7 +286,7 @@ I designed both low-fidelity and high-fidelity wireframes and presented interact
           <div class="wireframes-layout">
             <p class="block-description">
               My wireframe ideas were later used by the lead graphic
-              designer, in charge of the final visual design of the websites
+              designer, who was in charge of the final visual design of the websites
             </p>
             <div class="wireframes-images">
               <img

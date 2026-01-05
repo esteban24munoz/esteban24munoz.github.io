@@ -127,7 +127,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
               The website has generated
               <span class="text-accent">3 confirmed bull sales</span>
               and currently ranks
-              <span class="text-accent">#1 on Google </span> Red Angus cattle
+              <span class="text-accent">#1 on Google </span> for Red Angus cattle
               information and sales in Missouri. It also included implementing a
               custom CRM system to manage available bulls and track sold
               inventory, improving internal organization while supporting
@@ -274,7 +274,7 @@ useScrollAnimation(resultsSectionRef, { threshold: 0.1 });
           </div>
           <div class="wireframes-layout">
             <p class="block-description">
-              I focused on user-friendliness for the client, who are older and less familiar with complex digital tools. I designed an intuitive backend that allows them to add new bulls, update details, and manage content effortlessly, while keeping the workflow simple and organized
+              I focused on user-friendliness for the client, who is older and less familiar with complex digital tools. I designed an intuitive backend that allows them to add new bulls, update details, and manage content effortlessly, while keeping the workflow simple and organized
             </p>
             <div class="wireframes-images">
               <img

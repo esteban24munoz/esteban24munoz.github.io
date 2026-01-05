@@ -80,7 +80,7 @@ const caseStudies: CaseStudy[] = [
     id: 'card-1',
     title: 'FoodPrints | World Food Programme (WFP) of the United Nations',
     role: 'UX/UI Designer & Web Developer',
-    description: 'Collaborated with product managers, developers and designers to create 3 fully responsive and interactive websites that showcase important data in a storytelling way.',
+    description: 'Collaborated with graphic designers, developers photographers and copy-writters to create 4 fully responsive and interactive websites that draws from public statistics, figures of WFP data across the region, diving deeper into the human narratives hidden within.',
     skills: ['React', 'TypeScript', 'Figma', 'AWS', 'GitHub', 'SEO'],
     category: 'Development',
     image: CarmenCover,

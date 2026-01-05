@@ -79,7 +79,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: 'card-1',
     title: 'FoodPrints | World Food Programme (WFP) of the United Nations',
-    role: 'UX/UI Designer & Web Developer',
+    role: 'UX/UI Designer & Front-End Developer',
     description: 'Collaborated with graphic designers, developers photographers and copy-writters to create 4 fully responsive and interactive websites that draws from public statistics, figures of WFP data across the region, diving deeper into the human narratives hidden within.',
     skills: ['React', 'TypeScript', 'Figma', 'AWS', 'GitHub', 'SEO'],
     category: 'Development',
@@ -99,9 +99,9 @@ const caseStudies: CaseStudy[] = [
   {
     id: 'card-3',
     title: 'The Table | Harding University',
-    role: 'UX/UI Designer & Web Developer',
+    role: 'UX/UI Designer & Lead Full-Stack Developer',
     description: 'Designed and developed a robust React web application that displays products in stock and out of stock to Harding Students, leveraging MySQL databases for real-time inventory control and the registration of 1167 shoppers since it began operations.',
-    skills: ['React', 'TypeScript', 'Figma'],
+    skills: ['React', 'MySQL','Docker', 'Figma', 'REST API', 'Routing', 'Authentication'],
     category: 'Development',
     image: TheTableCover,
     onClick: navigateToTheTable
@@ -109,9 +109,10 @@ const caseStudies: CaseStudy[] = [
   {
     id: 'card-4',
     title: 'Spring Hills Ranch | Freelance',
-    role: 'UX/UI Designer & Full Stack Developer',
+    role: 'UX/UI Designer & Full-Stack Developer',
     description: 'An informational e-commerce website from conception to implementation, specifically tailored to meet the needs of a small, family-run cattle farming enterprise in Mt. Vernon, Missouri.',
-    skills: ['Figma', 'PHP', 'APIs', 'SEO'],
+    skills: ['Figma', 'PHP', 
+    'MySQL', 'Sass', 'Mailchimp', 'Google Analytics', 'SEO'],
     category: 'Development',
     coverImage: SpringHillsCover,
     onClick: navigateToSpringHillsRanch
@@ -121,7 +122,7 @@ const caseStudies: CaseStudy[] = [
     title: 'Olive the Above | Fusion Cuisine Branding Team Project',
     role: 'Graphic Design',
     description: 'Branding project focused on creating a fresh, cohesive brand identity for a new fusion food concept starting as a food truck and expanding into catering and a future restaurant.',
-    skills: ['Indesign', 'Photoshop', 'Ilustrator'],
+    skills: ['Indesign', 'Photoshop', 'Ilustrator', '3D Design', 'Figma'],
     category: 'Graphic Design',
     coverImage: OliveTheAboveCover,
     onClick: navigateToOliveTheAbove
@@ -129,7 +130,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: 'card-6',
     title: 'Southern Kettle | Web Development Project',
-    role: 'UX/UI Designer & Web Developer',
+    role: 'UX/UI Designer & Front-End Developer',
     description: 'Designed and developed a responsive and interactive website for a popcorn family business.',
     skills: ['NextJS', 'TypeScript', 'Figma', 'AWS', 'GitHub', 'SEO'],
     category: 'Development',

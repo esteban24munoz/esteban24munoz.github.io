@@ -175,7 +175,7 @@ useScrollAnimation(nextProjectSectionRef, { threshold: 0.2 });
           <h2 class="section-label">02. ROLE</h2>
           <h3 class="role-title">
             UX / UI Designer<br />
-            Web Developer
+            Front-End Developer
           </h3>
           <p class="role-description">
 I designed both low-fidelity and high-fidelity wireframes and presented interactive demos using Figma and Dora.ai, demonstrating the storytelling approach to stakeholders and during internal staff meetings. I also conducted usability testing throughout the design iterations, continuously improving the user experience.

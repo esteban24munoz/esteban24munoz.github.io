@@ -144,7 +144,7 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0rem 1.5rem 2rem;
+  padding: 0rem 1.5rem 0rem;
   gap: 3rem;
   transition: background-color 0.3s ease;
 }
@@ -234,7 +234,7 @@ onMounted(() => {
 @media (max-width: 1200px) {
   .hero-section {
     gap: 5rem;
-    padding: 2rem 2rem 1.5rem;
+    padding: 2rem 2rem 0rem;
   }
 
   .hero-heading {
@@ -245,7 +245,7 @@ onMounted(() => {
 @media (max-width: 768px) {
   .hero-section {
     gap: 4rem;
-    padding: 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem 0rem;
     text-align: left;
   }
 
@@ -266,7 +266,7 @@ onMounted(() => {
 @media (max-width: 480px) {
   .hero-section {
     gap: 3rem;
-    padding: 1.25rem 1rem 1.25rem;
+    padding: 1.25rem 1rem 0rem;
   }
 
   .audience-tabs {

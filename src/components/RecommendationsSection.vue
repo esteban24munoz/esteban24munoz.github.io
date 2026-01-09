@@ -2,62 +2,87 @@
   <section class="recommendations-section">
     <h2 ref="sectionHeaderRef" class="section-title fade-in-element">Recommendations</h2>
 
+    <a class="linkedin-card" href="https://www.linkedin.com/in/em-24/details/recommendations/?detailScreenTabIndex=0" target="_blank">
     <div ref="containerRef" class="recommendations-container fade-in-element">
-      <article class="recommendation-card">
+      <article v-for="(recommendation, index) in displayedRecommendations" :key="index" class="recommendation-card">
         <div class="card-content">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/73de8380f2f93c2be214406a8af3237d92c7782c?width=168" 
-            alt="Amanda Colon"
-            class="profile-image"
-          />
+          <img :src="recommendation.profileImage" :alt="recommendation.profileName" class="profile-image" />
           <div class="profile-info">
-            <h3 class="profile-name">Amanda Colon</h3>
+            <h3 class="profile-name">
+                {{ recommendation.profileName }}
+            </h3>
             <p class="profile-title">
-              <span class="title-role">Residence Life Coordinator,</span>
-              <br/>
-              <span class="title-org"> Harding University</span>
+              <span class="title-role">{{ recommendation.titleRole }},</span>
+              <br />
+              <span class="title-org" v-html="recommendation.titleOrg"></span>
             </p>
           </div>
-          <p class="recommendation-text">
-            Esteban is great to work with. He is positive, easy to talk to and dependable. He asks questions and is always wanting to learn and grow. He has been a valued member of my team.
-          </p>
-        </div>
-      </article>
-
-      <article class="recommendation-card">
-        <div class="card-content">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/6e5d7b8d0cdae0b5eb92d5504d46099a6d77c9c7?width=168" 
-            alt="Yila Burgos"
-            class="profile-image"
-          />
-          <div class="profile-info">
-            <h3 class="profile-name">Yila Burgos</h3>
-            <p class="profile-title">
-              <span class="title-role">Subdirector,</span>
-              <br/>
-
-              <span class="title-org"> Centro ¡Supérate!<br/> Fundación Alberto Motta</span>
-            </p>
-          </div>
-          <p class="recommendation-text">
-            I have known Esteban since his high school years. He was a scholarship recipient at Centro ¡Supérate! Fundación Alberto Motta from 2019 to 2021. During his time at our Center, he received high-quality training in English, Computer Science, and Basic Life Skills over the course of three years. Throughout his time as a ¡Supérate! scholar, Esteban demonstrated a strong commitment to his studies and excellent time management. He successfully maintained outstanding academic performance both at his high school and at our Center, while participating in various volunteering activities.
+          <p class="recommendation-text" v-html="recommendation.recommendationText">
           </p>
         </div>
       </article>
     </div>
+  </a>
 
-    <!-- <button ref="showMoreBtnRef" class="show-more-btn fade-in-element">Show More</button> -->
+    <button v-if="hasMoreRecommendations" ref="showMoreBtnRef" class="more-projects-btn fade-in-element"
+      @click="showAll = !showAll">
+      {{ showAll ? 'Show Less' : 'Show More' }}
+    </button>
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useScrollAnimation } from '../composables/useScrollAnimation'
+import GabrielaProfile from '../assets/gabriela_profile.jpeg'
+import AmandaProfile from '../assets/amanda_profile.jpeg'
+import YilaProfile from '../assets/yila_profile.jpeg'
+
+interface Recommendation {
+  profileImage: string
+  profileName: string
+  titleRole: string
+  titleOrg: string
+  recommendationText: string
+}
+
+const recommendations: Recommendation[] = [
+  {
+    profileImage: GabrielaProfile,
+    profileName: 'Gabriela Cladellas',
+    titleRole: 'Graphic Designer',
+    titleOrg: 'World Food Programme (WFP)',
+    recommendationText: `Working with Esteban was a standout experience. He quickly became a real asset through his creative thinking and ability to solve problems with non-technical audiences. He brought fresh UX/UI design, development, and coding skills to corporate, multilingual projects, turning complex ideas and data into impactful web experiences for Latin America and the Caribbean.<br/><br/>Beyond his technical skills, Esteban is collaborative and proactive, and his iterative process helped meet deadlines while testing different interactive web experiences to deliver impactful storytelling with complex data. I'd highly recommend him to any team looking for a thoughtful, motivated UX/UI designer who can lead digital projects.`,
+  },
+  {
+    profileImage: AmandaProfile,
+    profileName: 'Amanda Colon',
+    titleRole: 'Residence Life Coordinator',
+    titleOrg: ' Harding University',
+    recommendationText: 'Esteban is great to work with. He is positive, easy to talk to and dependable. He asks questions and is always wanting to learn and grow. He has been a valued member of my team.',
+  },
+  {
+    profileImage: YilaProfile,
+    profileName: 'Yila Burgos',
+    titleRole: 'Subdirector',
+    titleOrg: ' Centro ¡Supérate!<br/> Fundación Alberto Motta',
+    recommendationText: 'I have known Esteban since his high school years. He was a scholarship recipient at Centro ¡Supérate! Fundación Alberto Motta from 2019 to 2021. During his time at our Center, he received high-quality training in English, Computer Science, and Basic Life Skills over the course of three years.<br/><br/>Throughout his time as a ¡Supérate! scholar, Esteban demonstrated a strong commitment to his studies and excellent time management. He successfully maintained outstanding academic performance both at his high school and at our Center, while participating in various volunteering activities.',
+  }
+
+]
 
 const sectionHeaderRef = ref<HTMLElement | null>(null)
 const containerRef = ref<HTMLElement | null>(null)
 const showMoreBtnRef = ref<HTMLElement | null>(null)
+const showAll = ref(false)
+
+const displayedRecommendations = computed(() => {
+  return showAll.value ? recommendations : recommendations.slice(0, 2)
+})
+
+const hasMoreRecommendations = computed(() => {
+  return recommendations.length > 2
+})
 
 // Initialize scroll animations
 useScrollAnimation(sectionHeaderRef, { threshold: 0.2 })
@@ -116,6 +141,10 @@ useScrollAnimation(showMoreBtnRef, { threshold: 0.3 })
   flex-wrap: wrap;
 }
 
+.linkedin-card{
+  text-decoration: none;
+}
+
 .profile-image {
   width: 84px;
   height: 84px;
@@ -139,6 +168,17 @@ useScrollAnimation(showMoreBtnRef, { threshold: 0.3 })
   font-weight: 700;
   line-height: normal;
   margin: 0;
+}
+
+.profile-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.profile-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .profile-title {

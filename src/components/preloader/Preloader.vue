@@ -115,7 +115,7 @@ onMounted(() => {
     letter-spacing: 0.05em;
     color: var(--color-text-light);
     text-align: center;
-    font-family: Inter, system-ui, sans-serif;
+    /* font-family: 'PPNeueMachina', sans-serif; */
     transform: translateY(100%);
     display: inline-block;
 }
@@ -129,7 +129,7 @@ onMounted(() => {
     background-clip: text;
     color: transparent;
     text-align: center;
-    font-family: Inter, system-ui, sans-serif;
+    font-family: 'PPNeueMachina', sans-serif;
     transform: translateY(100%);
     display: inline-block;
 }

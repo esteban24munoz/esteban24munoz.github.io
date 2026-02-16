@@ -34,6 +34,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useScrollAnimation } from '../composables/useScrollAnimation'
+import MariaProfile from '../assets/maria_profile.jpeg'
 import GabrielaProfile from '../assets/gabriela_profile.jpeg'
 import AmandaProfile from '../assets/amanda_profile.jpeg'
 import YilaProfile from '../assets/yila_profile.jpeg'
@@ -47,6 +48,17 @@ interface Recommendation {
 }
 
 const recommendations: Recommendation[] = [
+  {
+    profileImage: MariaProfile,
+    profileName: 'María Gallar Sánchez',
+    titleRole: 'Regional Communications Officer',
+    titleOrg: 'World Food Programme (WFP)',
+    recommendationText: `
+We worked on innovative formats and looked at new ways of engaging audiences – Esteban was key in both building this team spirit and in carrying out the project itself. He has been patient, explained complex technical aspects of his work to non-expert staff and advised clearly on what was feasible, on what was not and on how much time it would take to build up different stories and some of the interactive features within them. 
+<br/><br/>
+Esteban also responded very well to different peaks in workload – making himself available whenever he was needed and getting more downtime at times the project was quieter. Although he carried out part of his internship remotely, we always felt we could count on him. 
+`,
+  },
   {
     profileImage: GabrielaProfile,
     profileName: 'Gabriela Cladellas',
